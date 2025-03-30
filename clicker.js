@@ -1,7 +1,13 @@
-let clickCount = 0;
-var ClickCounter = document.getElementById("click-counter");
+let clickCount = 9990; 
 
-function handleClick(){
-    clickCount += 1;
-    ClickCounter.innerHTML = clickCount;
+function handleClick() {
+    clickCount += 1; 
+
+    let counter = document.getElementById("click-counter");
+    if (clickCount >= 10000){
+        counter.innerHTML = (clickCount/1000)+"k";
+    }else{
+        counter.innerHTML = clickCount;
+    }
 }
+
