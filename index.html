@@ -6,17 +6,21 @@
     <title>Klikacz</title>
     <link rel="stylesheet" href="style.css">
     <script src="clicker.js"></script>
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="split left">
         <div class="counter-container">
-            <p id="click-counter" class="counter">5</p>
+            <p id="click-counter" class="counter">#</p>
         </div>
 
         <!-- Uzyty button zamiast inputa -->
         <div class="banan-container">
-            <button class="centered banan" onclick="handleClick()">
-                <img src="banan.svg" alt="Banan">
+            <button class="centered banan disable-dbl-tap-zoom" onclick="handleClick()">
+                <img src="banan.svg" alt="Banan" class="banan">
             </button>
         </div>
 

@@ -1,4 +1,4 @@
-let clickCount = 9990; 
+let clickCount = 0; 
 
 function handleClick() {
     clickCount += 1; 
